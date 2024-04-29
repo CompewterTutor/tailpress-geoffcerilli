@@ -20,7 +20,13 @@ module.exports = {
         },
         extend: {
             colors: tailpress.colorMapper(tailpress.theme('settings.color.palette', theme)),
-            fontSize: tailpress.fontSizeMapper(tailpress.theme('settings.typography.fontSizes', theme))
+            fontSize: tailpress.fontSizeMapper(tailpress.theme('settings.typography.fontSizes', theme)),
+            // backgroundImage: {
+            //     "main-cerilli-light": "url('')",
+            //     "main-cerilli-dark": "url('')",
+            //     "footer-cerilli-light": "url('')",
+            //     "footer-cerilli-dark": "url('')"
+            // }
         },
         screens: {
             'xs': '480px',
@@ -29,6 +35,11 @@ module.exports = {
             'lg': tailpress.theme('settings.layout.contentSize', theme),
             'xl': tailpress.theme('settings.layout.wideSize', theme),
             '2xl': '1440px'
+        }
+    },
+    variants: {
+        extend: {
+            backgroundImage: ["dark"],
         }
     },
     plugins: [
