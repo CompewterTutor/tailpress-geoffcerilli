@@ -577,6 +577,9 @@ video {
 .mt-4{
     margin-top: 1rem
 }
+.block{
+    display: block
+}
 .inline-block{
     display: inline-block
 }
@@ -957,6 +960,9 @@ article > *:not(.entry-content),
 .focus\:ring-offset-white:focus{
     --tw-ring-offset-color: #fff
 }
+.group:hover .group-hover\:block{
+    display: block
+}
 @media (min-width: 600px){
 
     .sm\:w-auto{
@@ -985,6 +991,18 @@ article > *:not(.entry-content),
 }
 @media (min-width: 960px){
 
+    .lg\:absolute{
+        position: absolute
+    }
+
+    .lg\:relative{
+        position: relative
+    }
+
+    .lg\:right-0{
+        right: 0px
+    }
+
     .lg\:-mx-4{
         margin-left: -1rem;
         margin-right: -1rem
@@ -1011,12 +1029,24 @@ article > *:not(.entry-content),
         display: none
     }
 
+    .lg\:w-48{
+        width: 12rem
+    }
+
+    .lg\:max-w-xl{
+        max-width: 36rem
+    }
+
     .lg\:items-center{
         align-items: center
     }
 
     .lg\:justify-between{
         justify-content: space-between
+    }
+
+    .lg\:rounded{
+        border-radius: 0.25rem
     }
 
     .lg\:bg-transparent{
@@ -1037,4 +1067,5 @@ article > *:not(.entry-content),
         line-height: 1
     }
 }
+
 

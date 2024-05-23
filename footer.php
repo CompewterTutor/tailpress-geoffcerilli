@@ -18,6 +18,6 @@
 </div>
 
 <?php wp_footer(); ?>
-
+</div> <!-- end site wrapper -->
 </body>
 </html>

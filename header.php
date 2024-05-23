@@ -10,7 +10,7 @@
 </head>
 
 <body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
-
+<div id="site-wrapper"
 <?php do_action( 'tailpress_site_before' ); ?>
 <?php
 	// get_stylesheet_directory_uri();
@@ -55,13 +55,24 @@
 				</div>
 
 				<?php
+				// wp_nav_menu(
+				// 	array(
+				// 		'container_id'    => 'primary-menu',
+				// 		'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
+				// 		'menu_class'      => 'lg:flex lg:-mx-4',
+				// 		'theme_location'  => 'primary',
+				// 		'li_class'        => 'lg:mx-4',
+				// 		'fallback_cb'     => false,
+				// 	)
+				// );
 				wp_nav_menu(
 					array(
 						'container_id'    => 'primary-menu',
 						'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
 						'menu_class'      => 'lg:flex lg:-mx-4',
 						'theme_location'  => 'primary',
-						'li_class'        => 'lg:mx-4',
+						'li_class_0'      => 'lg:mx-4 lg:relative group',
+						'submenu_class'   => 'lg:hidden group-hover:block lg:absolute lg:right-0 lg:rounded lg:w-48 lg:max-w-xl bg-gray-200 p-4 block',
 						'fallback_cb'     => false,
 					)
 				);
